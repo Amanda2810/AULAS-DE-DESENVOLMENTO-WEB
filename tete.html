@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de Imagem</title>
+    <style>
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 80%;
+            height: 50vh; /* ou a altura desejada */
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: left 1s ease; /* Adiciona uma transição suave */
+        }
+
+        .slide-right {
+            left: 40%; /* Move a imagem para a direita, fora da tela */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="governo3.jpeg" alt="Imagem">
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        const image = $('img');
+
+        // Adiciona a classe para deslizar para a direita após um pequeno intervalo
+        setTimeout(function() {
+            image.addClass('slide-right');
+        }, 1000); // Tempo em milissegundos, ajuste conforme necessário
+    });
+</script>
+
+</body>
+</html>

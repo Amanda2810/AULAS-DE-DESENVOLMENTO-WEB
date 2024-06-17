@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.hollowknight.com/" target="_blank">Página oficial</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carouselExample">Carrossel de imagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#alerta">Alerta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#modal">Modal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis aliquam ipsa molestiae neque iste expedita sint quia assumenda in numquam. Ratione nobis vero ex magnam soluta veritatis sunt expedita at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium repellat, quos ducimus rem veritatis impedit molestiae? Quasi nemo eligendi assumenda voluptatum ducimus quod dolorum ad! Laboriosam illum mollitia consequatur eum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque odit a aliquam dolor amet iste, saepe consequatur fugit culpa itaque deleniti porro, temporibus placeat fuga qui sint! Nobis, quisquam maxime? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, minus? Nostrum amet non tempore magnam, vel repudiandae voluptatem quibusdam tempora dolores enim ipsam blanditiis expedita ab nesciunt necessitatibus, nulla ipsa!</p>
+
+    <!-- Carrossel de imagens -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="HK1.png" class="d-block w-90" alt="Hollow Knight 1">
+          </div>
+          <div class="carousel-item">
+            <img src="HK2.png" class="d-block w-90" alt="Hollow Knight 2">
+          </div>
+          <div class="carousel-item">
+            <img src="HK3.jpg" class="d-block w-90" alt="Hollow Knight 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p></p>
+
+      <iframe width="1000" height="515" src="https://www.youtube.com/embed/iHY_aFEOv2w?si=_H8eIghAI0rIyfcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <p></p>
+
+      <!-- Alertas -->
+      <div class="alert alert-primary" role="alert" id="alerta">
+        Compre Hollow Knight pela <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" class="alert-link" target="_blank">Steam</a>.
+      </div>
+  
+      <p></p>
+
+      <!-- Modal -->
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal">
+            Abrir Modal
+        </button>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Hollow Knight</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Jogo para PC, PS4, PS5, XBox e Nintendo Switch
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <p></p>
+
+      <!-- Botões -->
+    <button type="button" class="btn btn-success">Clique Aqui</button>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

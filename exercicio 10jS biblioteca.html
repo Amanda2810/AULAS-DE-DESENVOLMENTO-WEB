@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seleçao de elementos</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis sapiente animi optio quibusdam nulla neque perferendis vero? Incidunt amet doloremque sapiente earum culpa veniam? Qui minima nostrum omnis cupiditate.</p>
+    <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium impedit atque laudantium maiores reiciendis? Architecto reprehenderit expedita, at reiciendis placeat necessitatibus similique eius accusamus quis modi ea, nisi quam qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero aliquam, obcaecati odit distinctio rerum quisquam nemo minus delectus saepe eum facere molestias voluptate. Autem dolore beatae reiciendis tempore aliquam!</p>
+    <button id="bt1">Alterar</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('#bt1').click(function(){
+            $('#paragrafo').text('Texto alterado');
+            $('#paragrafo').css('color','red')
+        })
+    </script>
+</body>
+</html>

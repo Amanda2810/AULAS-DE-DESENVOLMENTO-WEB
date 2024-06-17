@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label for="">Nome:</label>
+            <input type="text" name="amanda" id="lo">
+            <p></p>
+            <label for="">E-mail:</label>
+            <input type="text" name="amanda" id="lo">
+            <p></p>
+            <label for="">Senha:</label>
+            <input type="password" name="20" id="rw">
+    </form>
+    <p></p>
+    <button id="botao">Alterar</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#botao').click(function(){
+          $("input[type='text']").css("border", "1px solid red");
+          $("input[type='text']").css("backgroundColor", "salmon");
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>p{
+        font-weight: 100;
+    }</style>
+    <ul id="lista">
+       <li>arroz </li>
+       <li>feijao</li>
+       <li>li</li>
+    </ul>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure fuga. Expedita dolores dignissimos magnam iure odio cupiditate itaque vitae velit, impedit enim reiciendis ipsam id, ut corrupti qui alias?</p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#p').mouseover(function(){
+            $(this).css('color', 'red');
+            $(this).css('font-weight', 'bold');
+        })
+        $('#p').mouseout(function(){
+            $(this).css('color', 'black');
+            $(this).css('font-weight', 'normal');
+        })
+       $('#lista li').mouseover(function(){
+        $(this).css('font-weight', 'bold'); 
+       })
+       $('#lista li').mouseout(function(){
+        $(this).css('font-weight', 'normal'); 
+       })
+    </script>
+    
+
+</body>
+</html>

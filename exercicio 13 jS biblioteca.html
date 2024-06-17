@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar cor do texto e fundo</title>
+    <style>
+        .custom {
+          color: rgb(255, 255, 255);
+          background-color: #3498db;
+        }
+      </style>
+</head>
+<body>
+    <h1> Alteração de cor</h1>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nesciunt in soluta voluptatibus necessitatibus vero voluptatum facere commodi nobis. Accusantium inventore eveniet tempora asperiores dolore nam in non voluptas eius.</p>
+    <button id="botao">Alterar cor</button>
+   <script src=https://code.jquery.com/jquery-3.7.1.min.js></script> 
+   <script>
+    $("#botao").click(function(){
+      $("#texto").css('backgroundColor', 'red');
+    })
+   </script>
+</body>
+</html>

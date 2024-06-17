@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animaçao{
+          width: 1%;
+          height: 1%;
+          background-color: #3498db;
+          color: white;
+          text-align: center;
+          line-height: 50px;
+          display: none; /* oculta inicialmente */
+        }
+        #meu-elemento img {
+    max-width: 50%; /* a largura máxima da imagem será o tamanho do elemento */
+    max-height: 20%; /* a altura máxima da imagem será o tamanho do elemento */
+    display: block; /* para garantir que as propriedades de largura e altura sejam aplicadas corretamente */
+    margin: auto; /* centralizar a imagem horizontalmente */
+  }
+</style>
+      </style>
+</head>
+<body>
+    
+<div id="animaçao"><img src="WhatsApp Image 2024-05-06 at 14.07.19.jpeg" alt="Eu"></div>
+<button id="botao">Clique para Animar</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#botao").click(function(){
+      $("#animaçao").slideToggle();
+    });
+</script>
+</body>
+</html>

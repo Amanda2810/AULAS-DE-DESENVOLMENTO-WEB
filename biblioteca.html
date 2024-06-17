@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Titulo</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid harum, laboriosam pariatur accusantium optio iure corporis iusto illo veritatis, officia doloremque reprehenderit, debitis dolore natus. Commodi illo in numquam?</p>
+    <img src=" coracao.webp" alt="coraçao" id="img">
+    <button id="bt1">Alterar</button>
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+           $('#bt1').click(function(){
+            $('#h1').text('Texto trocado');
+            $('#h1').css('color','red');
+           } )
+           $('#img').click(function(){
+            $(this).fadeOut('slow')
+           })
+           $('h1').click(function(){
+            $('#img').fadeIn('slow')
+           })
+
+        </script>
+</body>
+</html>
